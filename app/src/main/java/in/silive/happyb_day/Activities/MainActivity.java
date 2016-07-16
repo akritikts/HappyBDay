@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawer.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mToolbar = (Toolbar)findViewById(R.id.toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mToolbar.setTitle("Happy Birthday");
-        navigationDrawer = (NavigationDrawer)getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
+        navigationDrawer = (NavigationDrawer) getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         navigationDrawer.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         navigationDrawer.setDrawerListener(this);
         displayView(0);
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawer.
         displayView(position);
 
     }
+
     private void displayView(int position) {
         Fragment fragment = null;
         String title = getString(R.string.app_name);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawer.
                 break;
             case 2:
                 fragment = new WeUpto();
-                title = "What are we upto";
+                title = "What are we up to";
                 break;
             default:
                 break;

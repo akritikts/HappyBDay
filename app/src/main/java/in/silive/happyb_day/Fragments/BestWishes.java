@@ -32,13 +32,14 @@ public class BestWishes extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_best_wishes, container, false);
-        web_view = (WebView)view.findViewById(R.id.web_view);
+        web_view = (WebView) view.findViewById(R.id.web_view);
         WebSettings webSettings = web_view.getSettings();
         webSettings.setJavaScriptEnabled(true);
         web_view.setWebViewClient(new myWebClient());
-        web_view.loadUrl("file:///android_asset/one.html");
+        web_view.loadUrl("file:///android_asset/index.html");
         return view;
     }
+
     public class myWebClient extends WebViewClient {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
