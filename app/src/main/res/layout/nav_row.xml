@@ -8,10 +8,13 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="30dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
         android:textSize="15dp"
+        android:layout_margin="1dp"
+        android:background="#CE93D8"
         android:textColor="#000000"
         android:textStyle="bold" />
 
