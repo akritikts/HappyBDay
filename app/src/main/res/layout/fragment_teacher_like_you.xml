@@ -1,13 +1,28 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E1BEE7"
     tools:context="in.silive.happyb_day.Fragments.TeacherLikeYou">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="A Teacher like u" />
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="If you ever see us triumph,\n rise up elevated magnificently.\n Your dedication and power of teaching,\n was the ferry.\n Those precious failures,\n promoting the best in us.\n Pushing us to new plateaus,\n thus believing in us.\n Awakening curiosity and\n inspiring self-trust.\nFor those etched cognizance,\n we are obligated abundantly.\n If life is to teach lessons,\n we wish ours turn out to be,\n a teacher like you. "
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sunfl"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-</LinearLayout>
+</RelativeLayout>

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">HappyB_Day</string>
     <string-array name="nav_drawer_items">
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
+        <item>Best Wishes for you</item>
+        <item>A Teacher Like You</item>
+        <item>What are we up to</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->

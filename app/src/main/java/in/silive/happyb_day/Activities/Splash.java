@@ -7,8 +7,11 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.github.florent37.viewanimator.ViewAnimator;
 
 import in.silive.happyb_day.R;
 
@@ -18,7 +21,7 @@ import in.silive.happyb_day.R;
 public class Splash extends AppCompatActivity {
     Context context;
     RelativeLayout splash;
-    //ImageView image;
+    ImageView one ,two;
     TextView text;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,20 +29,20 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
         splash = (RelativeLayout) findViewById(R.id.splash);
         context = getApplicationContext();
-        //image = (ImageView) findViewById(R.id.image);
+        one = (ImageView) findViewById(R.id.one);
+        two = (ImageView)findViewById(R.id.two);
         text = (TextView) findViewById(R.id.text);
-
-        /*ViewAnimator
-                .animate(text)
-                .dp().translationX(-30, 0)
-                .descelerate()
-                .duration(3000)
-                .start();*/
+        ViewAnimator
+                .animate(two)
+                .translationY(-1000, 0)
+                .alpha(0,1)
+                .duration(2000)
+                .start();
         checkConnection();
     }
     public void checkConnection() {
             Snackbar snackbar = Snackbar
-                    .make(splash, " Happy Birthday Sir", Snackbar.LENGTH_LONG);
+                    .make(splash, "    Make A Wish    ", Snackbar.LENGTH_LONG);
             snackbar.show();
 
 

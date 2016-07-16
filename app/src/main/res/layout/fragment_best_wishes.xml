@@ -5,9 +5,11 @@
     tools:context="in.silive.happyb_day.Fragments.BestWishes">
 
 
-    <TextView
+    <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Best wishes for u" />
+        android:id="@+id/web_view">
+
+    </WebView>
 
 </LinearLayout>

@@ -2,12 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1C4E9"
     tools:context="in.silive.happyb_day.Fragments.WeUpto">
 
 
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="What are we upto" />
+        android:id="@+id/stud_list">
+
+    </ListView>
 
 </LinearLayout>
